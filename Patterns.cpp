@@ -12,35 +12,63 @@ int main(){
 	// 	}
 	// 	cout<<endl;
 	// }
-	for(int i = 1; i<=n;i++){
+	// for(int i = 1; i<=n;i++){
 
-		for(int j=1;j<=n-i;j++){
+	// 	for(int j=1;j<=n-i;j++){
 
-			cout<<" ";
+	// 		cout<<" ";
 
-		}
+	// 	}
 
 
-		for(int k = 1; k<=2*i-1;k++){
+	// 	for(int k = 1; k<=2*i-1;k++){
 
-			cout<<"*";
+	// 		cout<<"*";
 
-		}
+	// 	}
 
-		cout<<endl;
+	// 	cout<<endl;
 
-	}
+	// }
 
-		for(int i = n; i>=1;i--){
-			for(int j=1;j<=n-i;j++){
-				cout<<" ";
+	// 	for(int i = n; i>=1;i--){
+	// 		for(int j=1;j<=n-i;j++){
+	// 			cout<<" ";
 				
-			}
+	// 		}
 			
-			for(int k = 1; k<=2*i-1;k++){
-				cout<<"*";
+	// 		for(int k = 1; k<=2*i-1;k++){
+	// 			cout<<"*";
+	// 		}
+	// 		cout<<endl;
+	// }
+
+	// for(int i=1; i<=2*n-1;i++){
+	// 	int stars;
+	// 	if(i<n){
+	// 		stars = i;
+	// 	}
+	// 	else{
+	// 		stars = 2*n-i;
+	// 	}
+
+	// 	for(int j =1;j<=stars;j++){
+	// 		cout<<"*";
+	// 	}
+	// 	cout<<endl;
+	// }
+
+	for(int i=1;i<=n;i++){
+		int start = 1;
+		for(int j=1;j<=i;j++){
+			if((i+j) % 2 == 0){
+				cout<<"1";
 			}
-			cout<<endl;
+			else{
+				cout<<"0";
+			}
+		}		
+		cout<<endl;
 	}
 	
 }
